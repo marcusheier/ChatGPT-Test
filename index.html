@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="message">Hello, World!</div>
+    <button id="toggleButton">Change Color</button>
+
+    <script>
+        const message = document.getElementById('message');
+        const button = document.getElementById('toggleButton');
+        let toggled = false;
+
+        button.addEventListener('click', () => {
+            toggled = !toggled;
+            message.style.color = toggled ? 'skyblue' : 'black';
+        });
+    </script>
+</body>
+</html>
