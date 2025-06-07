@@ -4,22 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-        }
-        #message {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="message">Hello, World!</div>
@@ -32,7 +17,7 @@
 
         button.addEventListener('click', () => {
             toggled = !toggled;
-            message.style.color = toggled ? 'blue' : 'black';
+            message.style.color = toggled ? 'skyblue' : 'black';
         });
     </script>
 </body>
